@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choosing between Flexbox and Grid for a shared layout
+    </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .item {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 40px);
+        }
+        @media (max-width: 600px) {
+            .item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Choosing between Flexbox and Grid for a shared layout</h1>
+    <div class="container">
+        <div class="item">
+            <h2>Item 1</h2>
+            <p>Description of Item 1.</p>
+        </div>
+        <div class="item">
+            <h2>Item 2</h2>
+            <p>Description of Item 2.</p>
+        </div>
+        <div class="item">
+            <h2>Item 3</h2>
+            <p>Description of Item 3.</p>
+        </div>
+    </div>
+</body>
+</html>

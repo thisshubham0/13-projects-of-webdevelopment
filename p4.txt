@@ -1,0 +1,18 @@
+﻿1. What is a README file?
+A README file provides an essential overview and documentation for a software project.
+It typically includes:
+* Project Title & Description: Purpose and scope of the project.
+* Key Features & Technologies: Capabilities and tech stack overview.
+* Installation & Setup: Prerequisites and step-by-step installation instructions.
+* Usage & Execution: Commands to run, test, and build the application.
+* Author & License Information: Contributor details and usage licensing.
+The standard filename format is:
+README.md
+.md denotes the Markdown format, which enables structured rich-text output in code repositories.
+2. What is a Git tag?
+A Git tag is a reference pointing to a specific commit in a repository's Git history, commonly used to mark release versions.
+Common semantic versioning examples include:
+* v1.0.0 – Initial stable release.
+* v1.1.0 – Minor update adding new features backwards-compatibly.
+* v2.0.0 – Major release containing breaking changes.
+Tags provide permanent checkpoints for software deployments and releases.

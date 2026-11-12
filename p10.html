@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio header and footer with advanced Flexbox
+</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #11a2b8;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        section {
+            width: 80%;
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 600px) {
+            section {
+                width: 100%;
+            }
+        }
+        #footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio header and footer with advanced Flexbox</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Header</h2>
+            <p>This is the header section of the portfolio page. It contains the main title and can include navigation links or other important information.</p>
+        </section>
+        <section>
+            <h2>Main Content</h2>
+            <p>This is the main content area of the portfolio page. It can include various sections such as about, projects, skills, and more.</p>
+        </section>
+        <section>
+            <h2>Footer</h2>
+            <p>This is the footer section of the portfolio page. It typically contains contact information, social media links, and copyright details.</p>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design tokens and typography system in CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Design tokens and typography system in CSS</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Design Tokens</h2>
+            <p>Design tokens are a way to store design-related values such as colors, typography, spacing, and other visual properties in a centralized manner. They help maintain consistency across a design system.</p>
+        </section>
+        <section>
+            <h2>Typography System</h2>
+            <p>A typography system defines the styles for text elements in a design, including font families, sizes, weights, line heights, and letter spacing. It ensures that text is legible and visually appealing across different devices and screen sizes.</p>
+        </section>
+        <section>
+            <h2>Using Design Tokens and Typography System in CSS</h2>
+            <p>In CSS, design tokens can be implemented using custom properties (CSS variables). For example:</p>
+            <pre><code>:root {
+    --primary-color: #11a2b8;
+    --secondary-color: #f9f9f9;
+    --font-family: 'Arial', sans-serif;
+    --font-size-base: 16px;
+}</code></pre>
+            <p>These tokens can then be used throughout the CSS to style elements consistently:</p>
+            <pre><code>body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--primary-color);
+}
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}</code></pre>
+        </section>
+    </main>
+    
+</body>
+</html>

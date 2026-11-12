@@ -1,0 +1,6 @@
+﻿Terminal navigation
+* Mac: Open Terminal.
+* Windows: Open Command Prompt or PowerShell.
+* VS Code: Select Terminal → New Terminal.
+To Check current location
+pwd

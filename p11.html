@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper-style three-column layout with CSS Grid</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #11a2b8;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    section {
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    @media (max-width: 600px) {
+        main {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+<body>
+    <header>
+        <h1>Newspaper-style three-column layout with CSS Grid</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Three-Column Layout</h2>
+            <p>This layout uses CSS Grid to create a newspaper-style three-column layout. The main content is divided into three columns, allowing for a clean and organized presentation of information.</p>
+        </section>
+        <section>
+            <h2>CSS Grid Implementation</h2>
+            <p>The layout is implemented using CSS Grid properties. Here's an example of how to set up a three-column grid:</p>
+            <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}</code></pre>
+            <p>Each column can contain different types of content, such as articles, images, and advertisements, making it suitable for a newspaper-style layout.</p>
+        </section>
+        <section>
+            <h2>Responsive Design</h2>
+            <p>The layout can be made responsive by adjusting the grid properties based on the screen size. For example, on smaller screens, the layout can switch to a single-column format to ensure readability and accessibility.</p>
+            <pre><code>@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}</code></pre>
+        </section>
+    </main>
+</body>
+</html>

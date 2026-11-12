@@ -1,0 +1,16 @@
+﻿P3: Feature-Branch Git Workflow
+Practical 3
+Aim: To understand and implement a feature-branch workflow using Git. This allows developers to work on new features separately without disturbing the main project.
+1. What is Git?
+Git is a distributed version control system used to track changes in source code.
+It helps developers:
+* Track changes in files.
+* Restore previous versions.
+* Work together on projects.
+* Create separate branches for new features.
+2. What is a branch?
+A branch is an independent line of development in Git.
+For example:
+* main – Main project code.
+* feature-navbar – Code for developing a navbar.
+* feature-footer – Code for developing a footer.

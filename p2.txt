@@ -1,0 +1,10 @@
+﻿P2: Portfolio repo with an initial commit
+1.  First create new repository at github and copy https link
+2. Now go to terminal and go to the folder of your created project by giving path to terminal.Now you are in you folder
+3. Now you have to give command to terminal   git init
+4. Then you have to give command to terminal  git add .
+5. Now you have to give command  git commit -m “Initial commit”
+6. Next command git branch -M main
+7. Now you to give the link to you created new repositary by giving command  git remote add origin copiedlink
+8. Next give command git push -u origin main
+This is the instruction that follows to push a repositary to github by initial commit.
